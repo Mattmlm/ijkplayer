@@ -1,0 +1,14 @@
+prefix=/Users/mmo/code/ios/Vendor/ijkplayer/ios/build/ffmpeg-armv7/output
+exec_prefix=${prefix}
+libdir=/Users/mmo/code/ios/Vendor/ijkplayer/ios/build/ffmpeg-armv7/output/lib
+includedir=/Users/mmo/code/ios/Vendor/ijkplayer/ios/build/ffmpeg-armv7/output/include
+
+Name: libavutil
+Description: FFmpeg utility library
+Version: 56.14.100
+Requires: 
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavutil -pthread -lm -framework CoreFoundation -framework CoreVideo -framework CoreMedia
+Libs.private: 
+Cflags: -I${includedir}
